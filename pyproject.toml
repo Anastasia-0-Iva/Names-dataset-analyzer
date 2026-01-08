@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "Names-dataset-analyzer"
+version = "1.0.0"
+description = "A tool for analyzing a dataset of 33249 Russian names, calculating popularity ratings, and providing demographic statistics"
+authors = ["Anastasia Iva <Vatson.1604@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/Anastasia-0-Iva/Names-dataset-analyzer"
+repository = "https://github.com/Anastasia-0-Iva/Names-dataset-analyzer"
+keywords = ["names", "russian-names", "demographics", "population-statistics", "onomastics", "name-popularity"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
