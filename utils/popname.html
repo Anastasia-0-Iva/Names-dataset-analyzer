@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- Favicons -->
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <title>Все имена по алфавиту</title>
+  <meta content="Огромная база всех имен, с сортировкой по алфавиту, при переходе по имени вы можете узнать всю информацию и проверить популярность" name="description">
+  <meta name="csrf-token" content="NnCvyIYTFedfTLk8BIQGL0sBldCIKeJDOYM2LMKP">
+</head>
+
+<body class="blog-details-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+<head>
+    
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- Favicons -->
+  <link rel="icon" href="https://popname.ru/assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://popname.ru/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://popname.ru/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://popname.ru/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://popname.ru/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://popname.ru/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="https://popname.ru/assets/css/main.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+<script type="text/javascript">
+  VK.init({ apiId: 51852426, onlyWidgets: true });
+</script>
+
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(94842566, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/94842566" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+  <!-- Yandex.RTB R-A-17208267-2 -->
+  <script>
+    window.yaContextCb.push(() => {
+      Ya.Context.AdvManager.render({
+        "blockId": "R-A-17208267-2",
+        "type": "fullscreen",
+        "platform": "desktop"
+      })
+    })
+  </script>
+  <!-- Yandex.RTB R-A-17208267-3 -->
+  <script>
+    window.yaContextCb.push(() => {
+      Ya.Context.AdvManager.render({
+        "blockId": "R-A-17208267-3",
+        "type": "fullscreen",
+        "platform": "touch"
+      })
+    })
+  </script>
+<!--  <script src="assets/js/navigation.js"></script> -->
+<!--
+<script type="text/javascript" src="https://majorpushme1.com/?ma=hfrgemjwme5ha3ddf4ztinzv" async></script>
+-->
+</head>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header sticky-top d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="https://popname.ru/assets/img/logo.png" alt="">
+        <h1>Популярные имена</h1>
+        <span>.</span>
+      </a>
+
+      <!-- Nav Menu -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/">Главная</a></li>
+          <li><a href="/names">Все имена</a></li>
+          <li><a href="/search-name">Поиск имени</a></li>
+          <li><a href="/pop-name">Популярность имени</a></li>
+          <li><a href="/generate">Генератор имен</a></li>
+          <li><a href="/rating-names">Рейтинги</a></li>
+          <li><a href="/signs/home">Гороскопы</a></li>
+          <li><a href="/posts">Статьи</a></li>
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav><!-- End Nav Menu -->
+
+      <a class="btn-getstarted" href="https://t.me/+U112Mdr1phU2MTUy">Telegram</a>
+
+    </div>
+  </header><!-- End Header -->
+  <main id="main">
+
+    <div class="content">
+        <div class="d-flex flex-wrap align-items-center">
+            <h1 class="title">Все имена по алфавиту</h1>
+            <div class="search-box ms-5">
+                <div class="search-name">
+                    <form id="search-form" action="/search-name" method="get">
+                        
+                        <input type="text" id="search" name="query" placeholder="Начните вводить имя..." required>
+                        <button type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    <div id="results"></div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap align-items-center">
+                                <a href="/names-letter-a"><h4 class="p-1">А</h4></a>
+                                <a href="/names-letter-b"><h4 class="p-1">Б</h4></a>
+                                <a href="/names-letter-v"><h4 class="p-1">В</h4></a>
+                                <a href="/names-letter-g"><h4 class="p-1">Г</h4></a>
+                                <a href="/names-letter-d"><h4 class="p-1">Д</h4></a>
+                                <a href="/names-letter-e"><h4 class="p-1">Е</h4></a>
+                                <a href="/names-letter-j"><h4 class="p-1">Ж</h4></a>
+                                <a href="/names-letter-z"><h4 class="p-1">З</h4></a>
+                                <a href="/names-letter-u"><h4 class="p-1">И</h4></a>
+                                <a href="/names-letter-i"><h4 class="p-1">Й</h4></a>
+                                <a href="/names-letter-k"><h4 class="p-1">К</h4></a>
+                                <a href="/names-letter-l"><h4 class="p-1">Л</h4></a>
+                                <a href="/names-letter-m"><h4 class="p-1">М</h4></a>
+                                <a href="/names-letter-n"><h4 class="p-1">Н</h4></a>
+                                <a href="/names-letter-o"><h4 class="p-1">О</h4></a>
+                                <a href="/names-letter-p"><h4 class="p-1">П</h4></a>
+                                <a href="/names-letter-r"><h4 class="p-1">Р</h4></a>
+                                <a href="/names-letter-s"><h4 class="p-1">С</h4></a>
+                                <a href="/names-letter-t"><h4 class="p-1">Т</h4></a>
+                                <a href="/names-letter-y"><h4 class="p-1">У</h4></a>
+                                <a href="/names-letter-f"><h4 class="p-1">Ф</h4></a>
+                                <a href="/names-letter-x"><h4 class="p-1">Х</h4></a>
+                                <a href="/names-letter-c"><h4 class="p-1">Ц</h4></a>
+                                <a href="/names-letter-h"><h4 class="p-1">Ч</h4></a>
+                                <a href="/names-letter-sh"><h4 class="p-1">Ш</h4></a>
+                                <a href="/names-letter-ea"><h4 class="p-1">Э</h4></a>
+                                <a href="/names-letter-ua"><h4 class="p-1">Ю</h4></a>
+                                <a href="/names-letter-ya"><h4 class="p-1">Я</h4></a>
+                </div>
+        <div class="d-flex flex-wrap align-items-center">
+            <a class="p-1 m-1 btn btn-outline-secondary" href="/names-male">Все мужские имена</a>
+            <a class="p-1 m-1 btn btn-outline-secondary" href="/names-female">Все женские имена</a>
+        </div>
+<div class="container my-3">
+    <div class="row">
+                    <div class="col-md-4">
+                <div>
+                    <a href="aavi-xasan"><h5>Аави Хасан</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="aavo"><h5>Ааво</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="aalo"><h5>Аало</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="aalcy"><h5>Аалчы</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="aalcymai"><h5>Аалчымай</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="aapo"><h5>Аапо</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="aare"><h5>Ааре</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="aarne"><h5>Аарне</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="aaron"><h5>Аарон</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="aaron-saul"><h5>Аарон Сауль</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="aaronas"><h5>Ааронас</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="aatm"><h5>Аатм</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="aatolii"><h5>Аатолий</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="aba"><h5>Аба</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="ababakar"><h5>Абабакар</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="ababakir"><h5>Абабакир</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abad"><h5>Абад</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abadad"><h5>Абадад</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abadan"><h5>Абадан</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abadi"><h5>Абади</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abadii"><h5>Абадий</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abazer"><h5>Абазер</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abai"><h5>Абай</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abakar"><h5>Абакар</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abakum"><h5>Абакум</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abakyz"><h5>Абакыз</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abalz"><h5>Абалз</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abalim"><h5>Абалим</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abalo"><h5>Абало</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abamuslim"><h5>Абамуслим</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abamyslim"><h5>Абамыслим</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abanare"><h5>Абанарэ</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abaraxman"><h5>Абарахман</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abarzado"><h5>Абарзадо</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abarmit"><h5>Абармит</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abas"><h5>Абас</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abasali"><h5>Абасали</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abasi"><h5>Абаси</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abassin"><h5>Абассин</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abat"><h5>Абат</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abatsong"><h5>Абатсонг</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abatuglim"><h5>Абатуглим</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abatullo"><h5>Абатулло</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abauvali"><h5>Абаували</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abaukarim"><h5>Абаукарим</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abaula"><h5>Абаула</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abac"><h5>Абач</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abasi"><h5>Абаши</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abaiaz"><h5>Абаяз</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abaiat"><h5>Абаят</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abbadi"><h5>Аббади</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abbaza"><h5>Аббаза</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abbas"><h5>Аббас</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abbasali"><h5>Аббасали</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abbaskuli"><h5>Аббаскули</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abbassaga"><h5>Аббассага</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abbat"><h5>Аббат</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abbatt"><h5>Аббатт</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abbas"><h5>Аббаш</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abbeserfe"><h5>Аббешерфе</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abbos"><h5>Аббос</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abbubakar"><h5>Аббубакар</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abbias"><h5>Аббяс</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abbiass"><h5>Аббясс</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abvulxak"><h5>Абвулхак</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abgar"><h5>Абгар</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abgiul"><h5>Абгюль</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abd"><h5>Абд</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abd-al-fatax"><h5>Абд Ал Фатах</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abd-alaziz"><h5>Абд Алазиз</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abd-rabon"><h5>Абд Рабон</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abd-raxman"><h5>Абд Рахман</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abd-saker"><h5>Абд Шакер</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdakei"><h5>Абдакей</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdala"><h5>Абдала</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdalan"><h5>Абдалан</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdalax"><h5>Абдалах</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdalgxani"><h5>Абдалгхани</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdalla"><h5>Абдалла</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdalla-samir"><h5>Абдалла Самир</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdalla-xarb"><h5>Абдалла Харб</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdallan"><h5>Абдаллан</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdallax"><h5>Абдаллах</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdallax"><h5>Абдальлах</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdalxamid"><h5>Абдальхамид</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdaraxman"><h5>Абдарахман</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdveli"><h5>Абдвели</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdgofur"><h5>Абдгофур</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdek"><h5>Абдек</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdel"><h5>Абдел</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdel-abu"><h5>Абдел Абу</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdel-zalil"><h5>Абдел Жалил</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdel-fattax"><h5>Абдел Фаттах</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdel-xamid"><h5>Абдел Хамид</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdelaziz"><h5>Абделазиз</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdelali"><h5>Абделали</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdelvaxab"><h5>Абделвахаб</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdelilax"><h5>Абделилах</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdelillax"><h5>Абделиллах</h5></a>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div>
+                    <a href="abdelkader"><h5>Абделкадер</h5></a>
+                </div>
+            </div>
+            </div>
+
+    <!-- Добавление элементов управления пагинацией -->
+    <nav class="d-flex justify-items-center justify-content-between">
+        <div class="d-flex justify-content-between flex-fill d-sm-none">
+            <ul class="pagination">
+                
+                                    <li class="page-item disabled" aria-disabled="true">
+                        <span class="page-link">Назад</span>
+                    </li>
+                
+                
+                                    <li class="page-item">
+                        <a class="page-link" style="color: #e84545;" href="https://popname.ru/names?page=2" rel="next">Следующая</a>
+                    </li>
+                            </ul>
+        </div>
+
+        <div class="d-none flex-sm-fill d-sm-flex align-items-sm-center justify-content-sm-between">
+            <div>
+                <p class="small text-muted">
+                    Показано с
+                    <span class="fw-semibold">1</span>
+                    до
+                    <span class="fw-semibold">100</span>
+                    из
+                    <span class="fw-semibold">33249</span>
+                    результатов
+                </p>
+            </div>
+
+            <div>
+                <ul class="pagination">
+                    
+                                            <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+                            <span class="page-link" aria-hidden="true">&lsaquo;</span>
+                        </li>
+                    
+                    
+                                            
+                        
+                        
+                                                                                                                        <li class="page-item active" style="color:#e84545;" aria-current="page"><span class="page-link">1</span></li>
+                                                                                                                                <li class="page-item" style="color:#e84545;"><a class="page-link" style="color:#e84545;" href="https://popname.ru/names?page=2">2</a></li>
+                                                                                                                                <li class="page-item" style="color:#e84545;"><a class="page-link" style="color:#e84545;" href="https://popname.ru/names?page=3">3</a></li>
+                                                                                                                                <li class="page-item" style="color:#e84545;"><a class="page-link" style="color:#e84545;" href="https://popname.ru/names?page=4">4</a></li>
+                                                                                                                                <li class="page-item" style="color:#e84545;"><a class="page-link" style="color:#e84545;" href="https://popname.ru/names?page=5">5</a></li>
+                                                                                                                                <li class="page-item" style="color:#e84545;"><a class="page-link" style="color:#e84545;" href="https://popname.ru/names?page=6">6</a></li>
+                                                                                                                                <li class="page-item" style="color:#e84545;"><a class="page-link" style="color:#e84545;" href="https://popname.ru/names?page=7">7</a></li>
+                                                                                                                                <li class="page-item" style="color:#e84545;"><a class="page-link" style="color:#e84545;" href="https://popname.ru/names?page=8">8</a></li>
+                                                                                                                                <li class="page-item" style="color:#e84545;"><a class="page-link" style="color:#e84545;" href="https://popname.ru/names?page=9">9</a></li>
+                                                                                                                                <li class="page-item" style="color:#e84545;"><a class="page-link" style="color:#e84545;" href="https://popname.ru/names?page=10">10</a></li>
+                                                                                                                                
+                                                    <li class="page-item disabled" style="color:#e84545;" aria-disabled="true"><span class="page-link">...</span></li>
+                        
+                        
+                                                                    
+                        
+                        
+                                                                                                                        <li class="page-item" style="color:#e84545;"><a class="page-link" style="color:#e84545;" href="https://popname.ru/names?page=332">332</a></li>
+                                                                                                                                <li class="page-item" style="color:#e84545;"><a class="page-link" style="color:#e84545;" href="https://popname.ru/names?page=333">333</a></li>
+                                                                                                        
+                    
+                                            <li class="page-item">
+                            <a class="page-link" style="color:#e84545;" href="https://popname.ru/names?page=2" rel="next" aria-label="Следующая">&rsaquo;</a>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </nav>
+
+<style scope>
+    .pagination>li.active>span{background-color: #e84545 !important; border: 0 !important;}
+</style>
+</div>
+
+</div>
+
+</main>
+<!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="/about" class="logo d-flex align-items-center">
+            <span>О проекте</span>
+          </a>
+          <p>Проект "Популярные имена" - это уникальная база данных, которая представляет обширный сборник имен со всего мира. Мы собрали вместе тысячи имен и представили все необходимые детали о каждом из них, чтобы упростить ваш поиск. Вы можете бесплатно использовать наш поиск по базе имен, чтобы найти всю информацию по конкретному имени.</p>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="/names">Все имена</a></li>
+            <li><a href="/search-name">Поиск по имени</a></li>
+            <li><a href="/pop-name">Популярность имени</a></li>
+            <li><a href="/generate">Генерация имени</a></li>
+            <li><a href="/about">О проекте</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Рейтинги</h4>
+          <ul>
+            <li><a href="/rating-100-names">100 самых популярных имен</a></li>
+            <li><a href="/rating-100-male-names">100 самых популярных мужских имен</a></li>
+            <li><a href="/rating-100-female-names">100 самых популярных женских имен</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Связаться с нами</h4>
+          <p><strong>Email:</strong> <span>info@popname.ru</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>&copy; <span>2007-2023</span> <strong class="px-1">Популярные имена</strong> <span>Копирование разрешено с указанием активной обратной гиперссылки на источник.</span></p>
+      <div class="credits">
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <!-- Scroll Top Button -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader 
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+-->
+  <!-- Vendor JS Files -->
+  <script src="https://popname.ru/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://popname.ru/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="https://popname.ru/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="https://popname.ru/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://popname.ru/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://popname.ru/assets/vendor/aos/aos.js"></script>
+  <script src="https://popname.ru/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="https://popname.ru/assets/js/main.js"></script><script src="https://popname.ru/assets/js/search-name.js"></script>
+</body>
+
+</html>
